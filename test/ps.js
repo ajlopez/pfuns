@@ -43,3 +43,16 @@ exports['partitions for 3'] = function (test) {
     test.deepEqual(result[2], [ 1, 1, 1 ]);
 };
 
+exports['partitions for 4'] = function (test) {
+    var result = pfuns.ps(4);
+    
+    test.ok(result);
+    test.ok(Array.isArray(result));
+    test.equal(result.length, 5);
+    test.deepEqual(result[0], [ 4 ]);
+    test.deepEqual(result[1], [ 3, 1 ]);
+    test.deepEqual(result[2], [ 2, 2 ]);
+    test.deepEqual(result[3], [ 2, 1, 1 ]);
+    test.deepEqual(result[4], [ 1, 1, 1, 1 ]);
+};
+
