@@ -1,5 +1,5 @@
 
-var pfuns = require('..');
+const pfuns = require('..');
 
 exports['first partition numbers'] = function (test) {
     test.equal(pfuns.p(1), 1);
