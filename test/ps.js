@@ -31,3 +31,15 @@ exports['partitions for 2 twice'] = function (test) {
     test.deepEqual(result[1], [ 1, 1 ]);
     test.strictEqual(result, result2);
 };
+
+exports['partitions for 3'] = function (test) {
+    var result = pfuns.ps(3);
+    
+    test.ok(result);
+    test.ok(Array.isArray(result));
+    test.equal(result.length, 3);
+    test.deepEqual(result[0], [ 3 ]);
+    test.deepEqual(result[1], [ 2, 1 ]);
+    test.deepEqual(result[2], [ 1, 1, 1 ]);
+};
+
