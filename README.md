@@ -16,7 +16,7 @@ const pfuns = require('pfuns');
 
 ## Functions
 
-Number of partitions for natural natural
+Number of partitions of n (natural number)
 
 ```
 console.log(pfuns.p(n));
@@ -24,7 +24,7 @@ console.log(pfuns.p(n));
 
 See [Sequence A000041](https://oeis.org/A000041)
 
-Partitions for natural natural
+Partitions of n
 
 ```
 console.log(pfuns.ps(n));
@@ -33,11 +33,15 @@ console.log(pfuns.ps(n));
 It returns an array. Each element is an array representing
 the partition.
 
-Number of partitions for natural number with k elements:
+Number of partitions of n with k elements:
 
 ```
 console.log(pfuns.pk(n, k))
 ```
+
+## Version
+
+- 0.0.1 Initial version
 
 ## References
 
